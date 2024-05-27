@@ -1,79 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
 }
+
 body {
-    font-family: 'Poppins', sans-serif;
-}
-.cabecalho {
-    background-color: #424E61;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 24px 0;
-}
-
-.cabecalho-imagem{
-    width: 10%;
-}
-
-.cabecalho-lista-item{
-    display: inline-block;
-    margin: 0 16px;
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
     font-size: 16px;
-}
-
-.escola-imagem{
-    width: 25%;
-}
-
-.escola{
-    background-image: linear-gradient(#424E61,#16CFF8);
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px 0;
-}
-
-.escola-div-conteudo{
-    width: 35%;
-}
-
-
-.escola-titulo{
-    padding: 24px 0;
-}
-
-.estudante{
-    padding: 50px 0;
-}
-.estudante-imagem{
-    width: 240px;
-}
-
-.estudante-icone{
-    width: 50px;
-    padding: 8px 16px;
-}
-
-.estudante-div{
-    text-align: center;
-    padding: 50px 0;
-}
-.estudante-todos{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-.rodape{
-    background-color: black;
-    text-align: center;
-}
-
-.rodape-imagem{
-    height: 60px;
-    padding: 12px 0;
-   
+    font-weight: 400;
 }
